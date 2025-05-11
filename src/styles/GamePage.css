@@ -1,0 +1,96 @@
+.game-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.game-header {
+  background-color: #2980b9;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.player-info {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.game-indicators {
+  display: flex;
+  gap: 20px;
+}
+
+.game-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question-panel {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.question-title {
+  color: #2980b9;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.question-description {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.game-panels {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.left-panel,
+.right-panel {
+  flex: 1;
+  min-width: 300px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-page.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-message {
+  font-size: 1.5rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .game-header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .game-indicators {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .game-panels {
+    flex-direction: column;
+  }
+}

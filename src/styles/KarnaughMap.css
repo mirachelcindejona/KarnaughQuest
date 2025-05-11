@@ -1,0 +1,115 @@
+.karnaugh-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.karnaugh-container h3 {
+  color: #2980b9;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.karnaugh-map {
+  display: grid; /* handled inline via style prop */
+  gap: 1px;
+  background-color: #ddd;
+  border: 1px solid #bbb;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto; /* prevent scroll from scale */
+}
+
+.karnaugh-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #ccc;
+}
+
+.karnaugh-cell.karnaugh-label {
+  background-color: #f0f0f0;
+  color: #555;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: default;
+}
+
+.karnaugh-cell.karnaugh-value {
+  cursor: pointer;
+  color: #2980b9;
+}
+
+.karnaugh-cell.karnaugh-value:hover {
+  background-color: #eef7ff;
+  box-shadow: inset 0 0 0 2px rgba(41, 128, 185, 0.3);
+}
+
+.karnaugh-cell.karnaugh-value.unfilled {
+  color: #ccc;
+}
+
+.karnaugh-instructions {
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 12px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.karnaugh-instructions p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin: 5px 0;
+}
+
+.karnaugh-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .karnaugh-cell {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .karnaugh-cell.karnaugh-label {
+    font-size: 0.75rem;
+  }
+
+  .karnaugh-instructions {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .karnaugh-cell {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .karnaugh-cell.karnaugh-label {
+    font-size: 0.7rem;
+  }
+}

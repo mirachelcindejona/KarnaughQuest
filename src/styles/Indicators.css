@@ -1,0 +1,74 @@
+.level-indicator,
+.lives-indicator {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 8px 15px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 110px;
+  text-align: center;
+}
+
+.indicator-label {
+  font-weight: 600;
+  color: #7f8c8d;
+}
+
+.indicator-value {
+  font-weight: 700;
+  color: #2980b9;
+}
+
+/* Level Indicator specific styles */
+.level-display,
+.question-display {
+  margin-bottom: 5px;
+}
+
+.level-display:last-child,
+.question-display:last-child {
+  margin-bottom: 0;
+}
+
+/* Lives Indicator specific styles */
+.heart-icon {
+  display: inline-block;
+  margin-right: 3px;
+  font-size: 1.2rem;
+  animation: pulse 1s infinite alternate;
+}
+
+.heart-icon.filled {
+  animation: pulse 1s infinite alternate;
+}
+
+.heart-icon.empty {
+  opacity: 0.5;
+  animation: none;
+}
+
+.heart-icon:last-child {
+  margin-right: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .level-indicator,
+  .lives-indicator {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    min-width: auto;
+  }
+
+  .heart-icon {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,256 @@
+.result-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #f5f7fa;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.result-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.result-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #2980b9;
+  margin-bottom: 30px;
+}
+
+.player-result {
+  margin-bottom: 30px;
+}
+
+.player-result h2 {
+  font-size: 1.8rem;
+  color: #34495e;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.player-name {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.stats-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.stats-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.stats-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.stats-label {
+  font-weight: 600;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+.stats-value {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.stats-value.success {
+  color: #27ae60;
+}
+
+.stats-value.normal {
+  color: #3498db;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #2ecc71;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.level-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.level-stats-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.level-label {
+  font-weight: 600;
+  color: #34495e;
+}
+
+.level-value {
+  font-weight: 700;
+  color: #2980b9;
+}
+
+.congratulations,
+.encouragement {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border-left: 5px solid #28a745;
+}
+
+.encouragement {
+  background-color: #fff3cd;
+  color: #856404;
+  border-left: 5px solid #ffc107;
+}
+
+.congratulations h3,
+.encouragement h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.congratulations p,
+.encouragement p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.result-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.play-again-button {
+  background-color: #2980b9;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.play-again-button:hover {
+  background-color: #3498db;
+  transform: translateY(-3px);
+}
+
+.home-button {
+  background-color: #7f8c8d;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.home-button:hover {
+  background-color: #95a5a6;
+  transform: translateY(-3px);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .result-title {
+    font-size: 1.8rem;
+  }
+
+  .player-result h2 {
+    font-size: 1.5rem;
+  }
+
+  .player-name {
+    font-size: 1.1rem;
+  }
+
+  .stats-label,
+  .stats-value {
+    font-size: 1rem;
+  }
+
+  .congratulations h3,
+  .encouragement h3 {
+    font-size: 1.2rem;
+  }
+
+  .congratulations p,
+  .encouragement p {
+    font-size: 0.9rem;
+  }
+
+  .result-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .play-again-button,
+  .home-button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
