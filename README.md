@@ -20,7 +20,7 @@
 
    ```bash
    git clone https://github.com/mirachelcindejona/KarnaughQuest.git
-   cd karnaugh-quest
+   cd KarnaughQuest
    ```
 
 2. **Install dependencies**
