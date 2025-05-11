@@ -19,7 +19,7 @@
 1. **Clone repositori ini**
 
    ```bash
-   git clone https://github.com/namamu/KarnaughQuest.git
+   git clone https://github.com/mirachelcindejona/KarnaughQuest.git
    cd karnaugh-quest
    ```
 
