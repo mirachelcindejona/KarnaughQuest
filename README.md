@@ -59,16 +59,6 @@
 
 ---
 
-## 💡 Konten Belajar
-
-| Level | Topik    | Ukuran Peta | Materi                    |
-| ----- | -------- | ----------- | ------------------------- |
-| 1     | Dasar    | 2x2         | AND, OR, NOT              |
-| 2     | Menengah | 2x4         | NAND, NOR, grouping       |
-| 3     | Lanjut   | 4x4         | Optimasi ekspresi Boolean |
-
----
-
 ## ⚠️ Catatan
 
 Game ini masih dalam tahap pengembangan. Beberapa fitur mungkin ditambahkan atau diperbaiki di versi berikutnya.
