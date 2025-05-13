@@ -107,7 +107,7 @@ const questions = {
       mapSize: { rows: 2, cols: 4 },
       rowLabels: ["A'", "A"],
       colLabels: ["B'C'", "B'C", "BC", "BC'"],
-      gateType: "Complex",
+      gateType: "Complex1",
       variables: ["A", "B", "C"],
       correctAnswer: [
         ["0", "1", "1", "0"],
@@ -123,7 +123,7 @@ const questions = {
       mapSize: { rows: 4, cols: 4 },
       rowLabels: ["A'B'", "A'B", "AB", "AB'"],
       colLabels: ["C'D'", "C'D", "CD", "CD'"],
-      gateType: "Complex",
+      gateType: "Complex2",
       variables: ["A", "B", "C", "D"],
       correctAnswer: [
         ["1", "0", "0", "0"],
@@ -142,7 +142,7 @@ const questions = {
       mapSize: { rows: 4, cols: 2 },
       rowLabels: ["A'B'", "A'B", "AB", "AB'"],
       colLabels: ["C'", "C"],
-      gateType: "Complex",
+      gateType: "Complex3",
       variables: ["A", "B", "C"],
       correctAnswer: [
         ["0", "0"],
